@@ -27,6 +27,12 @@ const setupInput = (conn) => {
     if (key === '1') {
       conn.write('Say: Lag');
     }
+    if (key === '2') {
+      conn.write('Say: Hi')
+    }
+    if (key === '3') {
+      conn.write('Say: GG');
+    }
   })
 
 stdin.on("data", handleUserInput);
